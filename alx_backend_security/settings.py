@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'ip_tracking',
+
+    'ratelimit',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +126,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+RATE_LIMIT_USE_CACHE = 'default'
+RATELIMIT_ENABLE = True
