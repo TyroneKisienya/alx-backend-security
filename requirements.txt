@@ -10,8 +10,8 @@ django-timezone-field==7.1
 ip2geotools==0.1.6
 celery==5.5.3
 redis==7.0.1
-psycopg2-binary==2.9.11
-mysqlclient==2.2.7
+psycopg2-binary==2.9.11  
+#mysqlclient==2.2.7 
 requests==2.25.1
 python-dotenv==1.1.1
 pytz==2022.1
