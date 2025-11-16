@@ -12,7 +12,7 @@ services:
       - key: SECRET_KEY
         sync: false
       - key: PYTHON_VERSION
-        value: 3.135
+        value: 3.10.12
       - key: DEBUG
         value: 'False'
         sync: false
@@ -38,4 +38,4 @@ services:
       - key: REDIS_URL
         sync: false
       - key: PYTHON_VERSION
-        value: 3.135
+        value: 3.10.12
