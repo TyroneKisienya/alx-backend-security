@@ -40,6 +40,7 @@ class IPTrackingMiddleware:
             city = geo_data.get('city')
         )
 
+        response = self.get_response(request)
         return response
     
     def get_client_ip(self,request):
