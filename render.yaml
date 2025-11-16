@@ -15,27 +15,3 @@ services:
         value: 3.10.12
       - key: DEBUG
         value: 'False'
-        sync: false
-      - key: DATABASE_URL
-        sync: false
-      - key: REDIS_URL
-        sync: false
-
-  - type: worker
-    name: celery-worker
-    runtime: python
-    region: oregon
-    plan: starter
-    buildCommand: |
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
-    startCommand: celery -A alx_backend_security worker -l info
-    envVars:
-      - key: SECRET_KEY
-        sync: false
-      - key: DATABASE_URL
-        sync: false
-      - key: REDIS_URL
-        sync: false
-      - key: PYTHON_VERSION
-        value: 3.10.12
