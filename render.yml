@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: alx-backend-security
+    runtime: python
+    plan: free
+    region: oregon
+
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn alx_backend_security.wsgi:application
+
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: alx_backend_security.settings
+
+      - key: SECRET_KEY
+        generateValue: true
+
+      - key: DEBUG
+        value: False
