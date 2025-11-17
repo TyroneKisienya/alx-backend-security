@@ -1,7 +1,7 @@
 services:
   - type: web
     name: alx-backend-security
-    runtime: python
+    runtime: python3.10
     plan: free
     region: oregon
 
