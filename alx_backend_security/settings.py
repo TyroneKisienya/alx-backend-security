@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
-ALLOWED_HOSTS = ['alx-backend-security-qgws.onrender.com']
+ALLOWED_HOSTS = ["alx-backend-security-qgws.onrender.com",]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-*muw8#q7-n_yc#9mug*#-x(jzm!+r=-_xzer0s1%9#8ubch03y'
