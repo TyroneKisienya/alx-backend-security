@@ -139,7 +139,7 @@ CELERY_BEAT_SCHEDULE = {
     }
 }
 
-# CACHES = {
+# CACHES = {            local redis host
 #     "default": {
 #         "BACKEND": "django_redis.cache.RedisCache",
 #         "LOCATION": "redis://127.0.0.1:6379/1",
